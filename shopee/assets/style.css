@@ -1,0 +1,56 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 10px;
+}
+.pagination ul{
+    display: flex;
+    list-style: none;
+}
+.pagination ul li{
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin : 0 5px;
+    transition: all 0.3s ease-in;
+}
+.pagination ul li.numb{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.pagination ul li.dots{
+    cursor: default;
+}
+.pagination ul li.btn{
+    width: 30px;
+    height: 30px;
+}
+.pagination ul li.active{
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+}
+.pagination ul li.numb:hover,
+.pagination ul li.btn:hover{
+    background-color: rgb(212, 207, 207,0.5);
+    border-radius: 50%;
+}
+.pagination ul button{
+    border : none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+.pagination ul button.prev{
+    margin-right: 25px;
+}
+.pagination ul button.next{
+    margin-left: 25px;
+}

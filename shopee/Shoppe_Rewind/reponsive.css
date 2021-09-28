@@ -1,0 +1,237 @@
+/* Mobile && Tablet */
+
+@media (max-width : 1023px) {
+    .grid.wide {
+        padding: 0 20px;
+    }
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header_search{
+        height: 100%;
+    }
+    .header{
+        height: 65px;
+    }
+    .container{
+        margin-top: 65px;
+    }
+    .header__sort-bar{
+        display: flex;
+    }
+    .menu_header{
+        display: block;
+    }
+    .search_bar{
+        position: fixed;
+        z-index: 6;
+        top: 65px;
+        left: -20px;
+        right: 0;
+        height: 65px;
+        display: none;
+    }
+    .wrap_search--control{
+        box-shadow: 0px 0px 5px 1px #ccc;
+        height: 48px;
+        margin-top: 8px;
+        padding: 0 10px;
+    }
+    .last_child--header:last-child{
+        display: none;
+    }
+    .last_child--footer:last-child{
+        display: none;
+    }
+    .last_child--header:last-child{
+        border: 1px solid red;
+    }
+
+}
+
+/* tabelt */
+@media (min-width : 740px) and (max-width : 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+    .header_logo{
+        flex: 1;
+    }
+    .menu_header{
+        flex: 1;
+    }
+    .search_bar{
+        margin-left: 20px;
+    }
+    .container_padding--80{
+        padding-top: 80px;
+     }
+    .modal_resign{
+        position: relative;
+        top:-80px;
+    }
+    .modal_login{
+        position: relative;
+        top:-110px;
+    }
+    .shopee_contact,
+    .shopee_download{
+        margin-top: 20px;
+    }
+    .footer_body{
+        padding: 0 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width : 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .header_search.header_search--mobile{
+        justify-content: space-between;
+    }
+    .header_search-cart{
+        width: 10px;
+    }
+    .header_logo{
+        flex: 1;
+    }
+    .menu_header{
+        flex: 1;
+    }
+    .menu_header{
+        display: flex;
+        align-items: center;
+    }
+    .modal_resign{
+        position: relative;
+        top:-50px;
+        width: 100%;
+    }
+    .modal_login{
+        position: relative;
+        width: 100%;
+        top:-50px
+    }
+    .container{
+        padding-top: 20px;
+        margin-top: 100px;
+    }
+    .container_padding--50{
+        padding-top: 30px;
+     }
+     .footer_header{
+         flex-direction: column;
+         align-items: flex-start;
+     }
+     .pack_footer{
+         margin: 10px;
+     }
+     .footer_nation{
+         display: none !important;
+     }
+}
+
+
+/* ------------------------- */
+@media (max-width : 1660px){
+    .wide_header{
+        width: 1400px;
+    }
+    .header_search-cart{
+        width: 140px;
+    }
+}
+@media (max-width : 1425px){
+    .wide_header{
+        width: 1200px;
+    }
+    .shopee_nation{
+        flex-direction: column;
+    }
+    .footer_nation{
+        justify-content: flex-start;
+        margin-top : 10px;
+        border : 1px solid red;
+    }
+    .full-width{
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+}
+@media (max-width : 1230px){
+    .wide_header{
+        width: 1000px;
+    }
+    .header_search-cart{
+        width: 120px;
+    }
+}
+@media (max-width : 1040px){
+    .wide_header{
+        width: 900px;
+    }
+}
+@media (max-width : 1024px){
+    .wide_header{
+        width: 100%;
+    }
+    .header_search-cart{
+        width: 140px;
+    }
+    .header_logo{
+        padding-left: 20px;
+    }
+    .return_pack-content>.header_content{
+        font-size: 1.2rem;
+        line-height: 20px;
+        opacity: 0.6;
+    }
+    .icon_footer{
+        margin-right: 20px;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width : 918px){
+    .home_filter{
+        width: 100%;
+    }
+}
+@media(max-width: 1070px){
+    .main_address{
+        display: none;
+    }
+}
+@media(max-width: 800px){
+    .border-right{
+       border: none;
+    }
+    .footer_end-heading{
+        flex-direction: column;
+        align-items: center;
+    }
+    .end_heading{
+        margin-top: 10px;
+    }
+}
+@media(max-width : 570px){
+    .pagination>a{
+        font-size: 1.6rem;
+        margin: 0 13px;
+        padding : 0 10px;
+        color: rgba(0,0,0,.5);
+    }
+    .pagination>.icon_pagi{
+        font-size: 1rem;
+        color : rgba(0,0,0,.5);
+        margin : 0 18px;
+    }
+}
+/* @media (max-width : 1250px){
+    .grid.wide_slider{
+        width: 2000px;
+        border : 1px solid red;
+    }
+} */
+

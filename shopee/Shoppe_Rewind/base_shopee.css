@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    box-sizing: inherit;    /* tính kế thừa --> tất cả thẻ sẽ được kế thừa thuộc tính
+    box-sizing: border-box của thẻ html; */
+}
+html{
+     /* 1 rem bằng 10px -> 1.6rem = 16px */
+    /* mặc định 100% là 16px -->62.5% là 10px*/
+    font-size : 62.5%; 
+    line-height: 1.6rem; 
+    font-family: "Helvetica Neue", Helvetica, Arial,
+     文泉驛正黑, "WenQuanYi Zen Hei",
+     "Hiragino Sans GB", "儷黑 Pro", 
+     "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", 
+     "Microsoft JhengHei", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+/* ----------------responsive----- */
+
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7px;
+    margin-right: -7px;
+}
+.grid_banner{
+    width: 1200px;
+    max-width: 100%;
+    margin : 0 auto;
+}
+
+
+
+.grid_col2{
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 16.667%;
+}
+.grid_col2-product{
+    display: flex;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 20%;
+    box-sizing: border-box;
+}
+.grid_col10{
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 83.333%;
+}
+.grid_col12{
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 100%;
+}
+.grid_col2-full{
+    display: flex;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 16.667%;
+}
+.grid_footer-30{
+    display: flex;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 30%;
+}
+.grid_footer-70{
+    display: flex;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 60%;
+}
+.none_active{
+    display: none;
+}
+.active_cartBox{
+    display: block !important;
+}
+
+@keyframes fadein_notify{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadein_qr{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes overlay_mobile{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  
+  @keyframes Open_mobile{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  @keyframes Close_mobile{
+    from{
+      opacity: 1;
+    }
+    to{
+      opacity: 0;
+    }
+  }
+.search_bar.sideinBar{
+    animation: sideinBar ease-in 0.3s;
+    display: block;
+}
+@keyframes sideinBar{
+    from{
+        opacity: 0;
+        top : 35px; 
+    }
+    to{
+        opacity: 1;
+        top : 65px; 
+    }
+}
+/* ------------modal-------------------- */
+.modal{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    animation: fadein ease-in 0.5s;
+    z-index: 1000;
+}
+.modal_body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal_resign{
+    background-color: white;
+    height: 560px;
+    width: 520px;
+    margin : 0 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.modal_login{
+    background-color: white;
+    height: 480px;
+    width: 520px;
+    margin : 0 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+
+
